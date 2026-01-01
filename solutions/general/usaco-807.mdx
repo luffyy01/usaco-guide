@@ -1,3 +1,107 @@
+# My solution
+```cpp
+
+
+
+
+```
+
+
+// ============================================================================ //
+// ||                                                                        || //
+// ||                                                                        || //
+// ||                           MIT                                          || //
+// ||----------------------INFINITE CHANCES----------------------------------|| //
+// ||---------------------BY MONKEY D. LUFFY---------------------------------|| //
+// ||                                                                        || //
+// ||                                                                        || //
+// ============================================================================ //
+ 
+//------------------------------------------------------------------------------//
+ 
+#include <bits/stdc++.h>
+using namespace std; 
+
+#define ll long long
+#define endl '\n' 
+ 
+//------------------------------------------------------------------------------//
+ 
+
+ 
+void solve(){
+
+
+  int a, b, x, y;
+  cin >> a >> b;
+  cin >> x >> y;
+  int answer = abs(a-b);
+  answer = min(answer, abs(a-x) + abs(b-y));
+  answer = min(answer, abs(a-y) + abs(b-x));
+  cout << answer << "\n";
+
+}
+
+ 
+//------------------------------------------------------------------------------//
+    
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+ 
+    #ifndef ONLINE_JUDGE
+        freopen("teleport.in", "r", stdin);
+        freopen("teleport.out", "w", stdout);
+        auto start = chrono::high_resolution_clock::now();  
+    #endif
+ 
+//------------------------------------------------------------------------------//
+ 
+    // ll t;
+    // cin >> t;
+    // while (t--){
+        solve();
+    // }
+    
+//------------------------------------------------------------------------------//
+ 
+    #ifndef ONLINE_JUDGE
+        auto end = chrono::high_resolution_clock::now(); 
+        chrono::duration<double, milli> duration = end - start;
+        cerr << "Time: " << duration.count() << " ms" << endl;
+    #endif
+
+    return 0;
+}
+
+//------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 id: usaco-807
 source: USACO Bronze 2018 February
